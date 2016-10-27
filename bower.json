@@ -1,0 +1,19 @@
+{
+  "name": "ui-router-webpack",
+  "description": "ui-router-webpack",
+  "main": "index.js",
+  "authors": [],
+  "license": "MIT",
+  "homepage": "https://github.com/christopherthielen/ui-router-webpack",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "1.5.8",
+    "angular-ui-router": "1.0.0-beta.3"
+  }
+}
