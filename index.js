@@ -1,7 +1,7 @@
-var angular = require("angular");
-var uiRouter = require("angular-ui-router").default;
+require("angular");
+require("angular-ui-router");
 
-var app = angular.module('foo', [uiRouter]);
+var app = angular.module('foo', ['ui.router']);
 
 app.config(function($stateProvider) {
   $stateProvider.state({ 

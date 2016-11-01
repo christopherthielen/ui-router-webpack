@@ -1,4 +1,5 @@
 var webpack = require('webpack');
+var path = require('path');
 
 var webpackConfig = {
     entry: { "app": "./index", },
@@ -7,7 +8,7 @@ var webpackConfig = {
         filename: "[name].min.js",
         libraryTarget: "umd",
         library: "app",
-    },
+    },    
 
 //    module: {
 //        rules: [
@@ -15,12 +16,15 @@ var webpackConfig = {
 //        ]
 //    },
 
-
     resolve: {
-        modules: [
-            'node_modules'
-        ],
-    }
+        modulesDirectories: ['node_modules', 'bower_components']
+    },
+
+    plugins: [
+        new webpack.ResolverPlugin(
+            new webpack.ResolverPlugin.DirectoryDescriptionFilePlugin('.bower.json', ['main'])
+        )
+    ]
 };
 
 module.exports = webpackConfig;

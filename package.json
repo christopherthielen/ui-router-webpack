@@ -3,10 +3,6 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
-  "dependencies": {
-    "angular": "1.5",
-    "angular-ui-router": "1.0.0-beta.2"
-  },
   "devDependencies": {
     "webpack": "^1.13.3",
     "webpack-dev-server": "^1.16.2"
