@@ -14,6 +14,6 @@
   ],
   "dependencies": {
     "angular": "1.5.8",
-    "angular-ui-router": "1.0.0-beta.3"
+    "angular-ui-router": "1.0.10"
   }
 }
